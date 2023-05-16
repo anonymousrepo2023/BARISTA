@@ -41,8 +41,8 @@ def experiment(training_samples, training_labels, scheme, learning_rate, converg
             differences.append(difference)
             penalty_combo.append([l1_penalties[i], l2_penalties[j]])
     max_value = max(accuracies)
-    index = accuracies.index(max_value)
-    return penalty_combo[index], max_value, differences[index]
+    indices = [index for index, value in enumerate(accuracies) if value == max_value]
+    return penalty_combo[indices[-1]], max_value, differences[indices[-1]]
 
 
 
@@ -192,7 +192,7 @@ fig.add_subplot(1, 1, 1, frame_on=False)
 plt.tick_params(labelcolor="none", bottom=False, left=False)
 
 # Adding the x-axis and y-axis labels for the bigger plot
-plt.savefig("/Users/nicolascutrona/Desktop/convergence.png", dpi=300)
+plt.savefig("/filepath/convergence.png", dpi=300)
 
 
 
@@ -226,4 +226,4 @@ fig.add_subplot(1, 1, 1, frame_on=False)
 plt.tick_params(labelcolor="none", bottom=False, left=False)
 
 # Adding the x-axis and y-axis labels for the bigger plot
-plt.savefig("/Users/nicolascutrona/Desktop/convergencetwo.png", dpi=300)
+plt.savefig("/filepath/convergencetwo.png", dpi=300)
