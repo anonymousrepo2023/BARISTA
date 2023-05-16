@@ -11,12 +11,12 @@ Weighted Naive Bayes methods have recently been developed to alleviate the stron
 
 ### Data Access
 
-For now, we direct users to the UCI Machine Learning Repository [link](https://archive.ics.uci.edu/ml/index.php). If this work is accepted, we will release a link to our research group's one-drive that contains already pre-processed data. For now, users will have fill in missing values manually.
+For now, we direct users to the UCI Machine Learning Repository [link](https://archive.ics.uci.edu/ml/index.php). If this work is accepted, we will release a link to our research group's one-drive that contains already pre-processed data. For now, user must manually impute missing values before loading the data into the BARISTA framework.
 
 
 ### How To Run
 
-To use BARISTA, please see the how_to_run.ipyn file that contains detailed instructions. A user will need a dataset, along with specificaions of parameter values when calling the BARISTA object. Below is some basic **documentation** about the algorith. 
+To use BARISTA, please see the how_to_run.ipynb file that contains detailed instructions. A user will need a dataset, along with specificaions of parameter values when calling the BARISTA object. Below is some basic **documentation** about the algorith. 
 
 class BARISTA.fit(training_samples, training_labels, scheme = 'FISTA', learning_rate = 0.1, convergence_constant = 1e-6, max_iterations= 5000, l1_penalty = 0.01, l2_penalty = 0.001)
 
@@ -59,7 +59,7 @@ class BARISTA.predict(testing_samples, testing_labels)
 
 <ins>output</ins>
 
-*predicted classification*: ($\hat{P}_{test} \in R^{k}$) predicted classifications corresponding to the testing samples
+*predicted classification*: ($\max \hat{P}_{test} \rightarrow c \in R^{k}$) predicted classifications corresponding to the testing samples
 
 
 
@@ -74,5 +74,3 @@ class BARISTA.model_accuracy(predictions, ground_truth)
 <ins>output</ins>
 
 *accuracy metric*: ($R$) accuracy score given by $1 - \frac{|\text{errors}|}{k}$
-
-
