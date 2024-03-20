@@ -8,7 +8,7 @@ Weighted Naive Bayes methods have recently been developed to alleviate the stron
 
 ### Data Access
 
-For now, we direct users to the UCI Machine Learning Repository [link](https://archive.ics.uci.edu/ml/index.php). If this work is accepted, we will release a link to our research group's one-drive that contains already pre-processed data. For now, the pre-preocessed CSV files are included in this repo. A user will need to change the file path in the experiment file to run our experiments.
+We direct users to the UCI Machine Learning Repository [link](https://archive.ics.uci.edu/ml/index.php). If this work is accepted, we will release a link to our research group's one-drive that contains already pre-processed data. For now, the pre-preocessed CSV files are included in this repo. A user will need to change the file path in the experiment file to run our experiments.
 
 
 ### How To Run
