@@ -23,7 +23,7 @@ class BARISTA.fit(training_samples, training_labels, scheme = 'FISTA', learning_
 
 *training_labels*: $(R^{n})$ dataframe object of training labels that map to the training samples
 
-*scheme*: (String) optimization scheme (either FISTA or ISTA) to learn optimal weight values, *default*: FISTA
+*scheme*: (string) optimization scheme (either FISTA or ISTA) to learn optimal weight values, *default*: FISTA
 
 *learning_rate*: (float) initial learning rate during the backtracking line search
 
