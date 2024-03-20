@@ -64,9 +64,9 @@ ________________________________________________________________________________
 
 class BARISTA.model_accuracy(predictions, ground_truth)
 
-*predictions*: (R^k) array of predictions from BARISTA.predict
+*predictions*: ($R^k$) array of predictions from BARISTA.predict
 
-*ground_truth*: (R^k) testing labels that map to the testing samples
+*ground_truth*: ($R^k$) testing labels that map to the testing samples
 
 <ins>output</ins>
 
